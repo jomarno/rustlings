@@ -8,10 +8,10 @@
 
 use std::error;
 use std::fmt;
-use std::error::Error;
+use std::error::Error; // SOLUTION: Replaced num::ParseIntError with error::Error
 
-// TODO: update the return type of `main()` to make this compile.
-fn main() -> Result<(), Box<dyn Error>> {
+// DONE: update the return type of `main()` to make this compile.
+fn main() -> Result<(), Box<dyn Error>> { // SOLUTION: Replaced ParseIntError with Box<dyn Error>
     let pretend_user_input = "42";
     let x: i64 = pretend_user_input.parse()?;
     println!("output={:?}", PositiveNonzeroInteger::new(x)?);

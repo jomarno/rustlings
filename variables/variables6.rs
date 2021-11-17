@@ -3,7 +3,7 @@
 
 // // I AM NOT DONE
 
-const NUMBER: u32 = 3;
+const NUMBER: i32 = 3; // SOLUTION: Added type annotation for NUMBER
 fn main() {
     println!("Number {}", NUMBER);
 }

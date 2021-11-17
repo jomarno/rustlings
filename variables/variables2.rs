@@ -4,7 +4,7 @@
 // // I AM NOT DONE
 
 fn main() {
-    let x: u32 = 10;
+    let x = 10; // SOLUTION: Assigned a value to x
     if x == 10 {
         println!("Ten!");
     } else {

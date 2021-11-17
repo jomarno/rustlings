@@ -4,6 +4,7 @@
 // // I AM NOT DONE
 
 enum Message {
+    // DONE: implement the message variant types based on their usage below
     Quit,
     Echo(String),
     Move(Point),
@@ -39,6 +40,7 @@ impl State {
     }
 
     fn process(&mut self, message: Message) {
+        // DONE: create a match expression to process the different message variants
         match message {
             Message::Quit => self.quit(),
             Message::Echo(string) => self.echo(string),

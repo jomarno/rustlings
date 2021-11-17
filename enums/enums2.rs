@@ -5,6 +5,7 @@
 
 #[derive(Debug)]
 enum Message {
+    // DONE: define the different variants used below
     Quit,
     Echo(String),
     Move{x: i32, y: i32},

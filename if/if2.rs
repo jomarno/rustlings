@@ -9,10 +9,10 @@
 pub fn fizz_if_foo(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         return "foo";
-    } else if fizzish == "fuzz" {
+    } else if fizzish == "fuzz" { // SOLUTION: Added else if branch
         return "bar";
     } else {
-        return "baz";
+        return "baz"; // SOLUTION: Changed return value from 1 to "baz"
     }
 }
 

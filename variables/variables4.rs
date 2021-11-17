@@ -4,6 +4,6 @@
 // // I AM NOT DONE
 
 fn main() {
-    let x: u32 = 69;
+    let x: i32 = 4; // SOLUTION: Assigned a value to x
     println!("Number {}", x);
 }

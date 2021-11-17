@@ -10,9 +10,10 @@
 
 pub fn generate_nametag_text(name: String) -> Result<String,String> {
     if name.len() > 0 {
-        Ok(format!("Hi! My name is {}", name))
+        Ok(format!("Hi! My name is {}", name)) // SOLUTION: Replaced Some with Ok
     } else {
         // Empty names aren't allowed.
+        // SOLUTION: Replaced None with following line
         Err(String::from("`name` was empty; it must be nonempty."))
     }
 }
@@ -28,7 +29,7 @@ mod tests {
     fn generates_nametag_text_for_a_nonempty_name() {
         assert_eq!(
             generate_nametag_text("Beyoncé".into()),
-            Ok("Hi! My name is Beyoncé".into())
+            Ok("Hi! My name is Beyoncé".into()) // SOLUTION: Replaced Some with Ok
         );
     }
 

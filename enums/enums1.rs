@@ -5,6 +5,7 @@
 
 #[derive(Debug)]
 enum Message {
+    // DONE: define a few types of messages as used below
     Quit,
     Echo,
     Move,

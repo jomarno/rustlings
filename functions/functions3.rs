@@ -4,7 +4,7 @@
 // // I AM NOT DONE
 
 fn main() {
-    call_me(69);
+    call_me(4); // SOLUTION: Added argument to function call
 }
 
 fn call_me(num: u32) {

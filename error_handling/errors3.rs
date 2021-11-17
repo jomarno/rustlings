@@ -9,16 +9,11 @@
 use std::num::ParseIntError;
 use::std::error::Error;
 
-fn main() -> Result<(), Box<dyn Error>> {
+fn main() -> Result<(), Box<dyn Error>> { // SOLUTION: Changed return type to Result
     let mut tokens = 100;
     let pretend_user_input = "8";
 
     let cost = total_cost(pretend_user_input)?;
-
-    // let cost = match total_cost(pretend_user_input) {
-    //     Ok(cst) => cst,
-    //     Err(error) => panic!(error),
-    // };
 
     if cost > tokens {
         println!("You can't afford that many!");
@@ -27,7 +22,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         println!("You now have {} tokens.", tokens);
     }
 
-    Ok(())
+    Ok(()) // SOLUTION: Added Ok(()) as return value
 }
 
 pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {

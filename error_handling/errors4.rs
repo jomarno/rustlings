@@ -14,6 +14,8 @@ enum CreationError {
 
 impl PositiveNonzeroInteger {
     fn new(value: i64) -> Result<PositiveNonzeroInteger, CreationError> {
+        // SOLUTION: Wrote if statement to check for errors 
+        // and return the appropriate Err variant
         if value > 0 {
             return Ok(PositiveNonzeroInteger(value as u64));
         } else if value == 0 {
