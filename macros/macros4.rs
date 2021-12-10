@@ -1,12 +1,12 @@
 // macros4.rs
 // Make me compile! Execute `rustlings hint macros4` for hints :)
 
-// I AM NOT DONE
+// // I AM NOT DONE
 
 macro_rules! my_macro {
     () => {
         println!("Check out my macro!");
-    }
+    }; // SOLUTION: Added semicolon in this line
     ($val:expr) => {
         println!("Look at this other macro: {}", $val);
     }
